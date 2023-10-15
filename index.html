@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
+    <title>Shayan Haque Personal Website </title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+    <div id = "header">
+        <div class = "container">
+            <nav>
+                <img src = "images/logo.png" class = "logo">
+                <ul>
+                    <li><a href = "#">Home</a></li>
+                    <li><a href = "#">About</a></li>
+                    <li><a href = "#">Services</a></li>
+                    <li><a href = "#">Portfolio</a></li>
+                    <li><a href = "#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class = "header-text">
+                <p>Student | Leader | Friend </p>
+                <h1>Hi, I'm <span>Shayan</span></h1>
+            </div>
+        </div>
+
+    </div>
+    <!------ about ----------------->
+    <div id = "about">
+        <div class="container">
+            <div class = "row">
+                <div class = "about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class = "about-col-2">
+                    <h1 class = "sub-title"> About Me</h1>
+                    <p>
+                        SPACE HOLDER ILL FIGURE IT OUT
+                    </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick = "opentab('skills')"><strong>Skills</strong></p>
+                        <p class = "tab-links" onclick = "opentab('Experience')"><strong>Experience</strong></p>
+                        <p class = "tab-links" onclick = "opentab('Education')"><strong>Education</strong></p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>CS</span><br>Design</li>
+                            <li><span>CAD</span><br>Designing 3D Models</li>
+                            <li><span>App Development</span><br>Design</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Experience">
+                        <ul>
+                            <li><span>2022</span><br>Pozitive Planet</li>
+                            <li><span>2023</span><br>Werfen Diagnostics</li>
+                            <li><span>2022-2023</span><br>Vdart Inc</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Tappan Zee High School</li>
+                            <li><span>|</span><br>Designing 3D Models</li>
+                            <li><span>| Development</span><br>Design</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+  </body>
+
+</html>
