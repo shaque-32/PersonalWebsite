@@ -12,7 +12,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/holder.png);
     background-size: cover;
     background-position: center;
 
@@ -76,6 +76,7 @@ nav ul li a::after{
   #about{
     padding: 80px 0;
     color: #ababab
+    
   }
   .row{
     display: flex;
@@ -91,6 +92,7 @@ nav ul li a::after{
   }
  .about-col-2{
     flex-basis: 60%;
+    font-size: 20px;
   }
   .sub-title{
     font-size: 60px;
@@ -104,10 +106,11 @@ nav ul li a::after{
   }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #fff;
 }
 
 .tab-links::after{
@@ -129,7 +132,7 @@ nav ul li a::after{
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents{
