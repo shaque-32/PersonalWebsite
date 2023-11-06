@@ -196,7 +196,8 @@ nav ul li a::after{
 }
 .work-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -215,7 +216,7 @@ nav ul li a::after{
 }
 .layer{
   width: 100%;
-  height: 100%;
+  height: 0;
   background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
   border-radius: 10px;
   position: absolute;
@@ -255,7 +256,7 @@ nav ul li a::after{
 
 }
 .work:hover .layer{
-  height: 100;
+  height: 100%;
 }
 .btn{
   display: block;
@@ -272,6 +273,7 @@ nav ul li a::after{
 .btn:hover{
   background: #ff004f;
 }
+/*-----------------More------------*/
 
 /*------------contact-------------*/
 .contact-left{
