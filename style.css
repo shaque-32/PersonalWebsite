@@ -200,6 +200,18 @@ nav ul li a::after{
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
+
+}
+
+.container .work-list .work{
+  display: none;
+}
+
+.container .work-list .work:nth-child(1),
+.container .work-list .work:nth-child(2),
+.container .work-list .work:nth-child(3),
+.container .work-list .work:nth-child(4){
+  display: inline-block;
 }
 
 .work{
@@ -273,8 +285,24 @@ nav ul li a::after{
 .btn:hover{
   background: #ff004f;
 }
-/*-----------------More------------*/
 
+#load-more{
+  align-items: center;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#load-more:hover{
+  background-color: #ff004f;
+  border-color: #ff004f;
+  color: #fff;
+}
 /*------------contact-------------*/
 .contact-left{
   flex-basis: 35%;
