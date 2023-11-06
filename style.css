@@ -200,8 +200,9 @@ nav ul li a::after{
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
-
 }
+
+
 
 .container .work-list .work{
   display: none;
@@ -286,22 +287,24 @@ nav ul li a::after{
   background: #ff004f;
 }
 
-#load-more{
-  align-items: center;
-  margin-top: 20px;
-  display: inline-block;
-  padding: 10px 30px;
-  border: 1px solid #334;
-  color: #334;
+#load-more {
+  display: inline-block; /* Change to inline-block */
+  width: 12%;
+  padding: 10px;
+  background-color: #ff004f;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
   font-size: 16px;
-  background-color: #fff;
   cursor: pointer;
+  text-align: center; /* Center the button's text */
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Make it a block element to center it properly */
 }
 
-#load-more:hover{
-  background-color: #ff004f;
-  border-color: #ff004f;
-  color: #fff;
+#load-more:hover {
+  background-color: #fff;
+  color: #ff004f;
 }
 /*------------contact-------------*/
 .contact-left{
@@ -364,6 +367,7 @@ form btn2{
   margin-top: 20px;
   cursor: pointer;
 }
+
 
 /*--------------css for small screen--------------*/
 @media only screen and (max-with: 600px){

@@ -50,7 +50,7 @@
                     <div class="tab-titles">
                         <p class = "tab-links active-link" onclick = "opentab('skills')"><strong>Leadership</strong></p>
                         <p class = "tab-links" onclick = "opentab('Experience')"><strong>Experience</strong></p>
-                        <p class = "tab-links" onclick = "opentab('Education')"><strong>Education</strong></p>
+                        <p class = "tab-links" onclick = "opentab('Education')"><strong>Education/Skills</strong></p>
 
                     </div>
                     <div class="tab-contents active-tab" id = "skills">
@@ -58,22 +58,24 @@
                             <li><span><strong>Class of 2024 President</strong></span><br>2020 - Present</li>
                             <li><span><strong>FRC Team 6911 Design Team Lead</strong></span><br>2021 - Present</li>
                             <li><span><strong>Computer Science Club President</strong></span><br>2023 - Present</li>
+                            <li><span><strong>Computer Science Honor Society VP</strong></span><br>2022 - 2023</li>
+
 
                         </ul>
                     </div>
                     <div class="tab-contents" id = "Experience">
                         <ul>
-                            <li><span><strong>Werfen Diagnostics</strong></span><br>STEM Intern</li>
-                            <li><span><strong>VDart Inc.</strong></span><br>Data Science Intern</li>
-                            <li><span><strong>Pozitive Planet</strong></span><br>Computer Science Intern</li>
+                            <li><span><strong>Werfen Diagnostics</strong></span><br>STEM Intern (2023) </li>
+                            <li><span><strong>VDart Inc.</strong></span><br>Data Science Intern (Summer 2021) </li>
+                            <li><span><strong>Pozitive Planet</strong></span><br>Computer Science Intern (2022 - Present)</li>
 
                         </ul>
                     </div>
                     <div class="tab-contents" id = "Education">
                         <ul>
                             <li><span><strong>2020-2024</strong></span><br>Tappan Zee High School<br>GPA: 103.22</li>
-                            <li><span><strong>CompuScholar</strong></span><br>Web Design Course</li>
-                            <li><span><strong>Udemy</strong></span><br>Computer-aided Design Fundamentals</li>
+                            <li><span><strong>Coding Languages</strong></span><br>Python, Java, JavaScript, HTML, CSS</li>
+                            <li><span><strong>CAD</strong></span><br>Fusion 360, Autodesk Inventor, AutoCAD</li>
 
 
 
@@ -211,6 +213,9 @@
             </div>
      </div>
         </div>
+        <br>
+        <br>
+
         <div id = "load-more">load more</div>
     </div>
 </div>
@@ -263,15 +268,20 @@
 
     </script>
     <script>
-       let loadMore = document.querySelector('#load-more');
-       let currentItem = 4;
+      let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 4;
+let workItems = document.querySelectorAll('.container .work-list .work');
 
-       loadMoreBtn.onclick = () =>{
-        let boxes = [...document.querySelectorAll('.container .work-list .work')]
-        for (var i = currentItem; i > currentItem+3; i++){
-            boxes{i}.style.display = 'inline-block';
-        }
-       }
+loadMoreBtn.onclick = () => {
+    for (let i = currentItem; i < currentItem + 4 && i < workItems.length; i++) {
+        workItems[i].style.display = 'inline-block';
+    }
+    currentItem += 4;
+
+    if (currentItem >= workItems.length) {
+        loadMoreBtn.style.display = 'none';
+    }
+}
 
     </script>
 
