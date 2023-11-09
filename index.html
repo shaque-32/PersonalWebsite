@@ -18,9 +18,9 @@
                   <!--<li><a href = "#tutoring">Tutoring</a></li>--->  
                     <li><a href = "#porfolio">Portfolio</a></li>
                     <li><a href = "#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class = "header-text">
                 <p>Leader | Problem Solver | Creator </p>
@@ -290,11 +290,15 @@ loadMoreBtn.onclick = () => {
     <script>
         var sidemenu = document.getElementById("sidemenu");
         function openmenu(){
-            sidemenu.styke.right = "0";
+            sidemenu.style.right = "0";
         }
-        function closemenu(){
-            sidemenu.styke.right = "-200";
-        }
+        function closemenu() {
+    sidemenu.style.right = "-200px";
+    var icons = document.querySelectorAll('.fa-solid');
+    icons.forEach(function (icon) {
+        icon.style.display = 'none';
+    });
+}
     </script>
 
   </body>
