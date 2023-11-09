@@ -431,4 +431,17 @@ nav .fas{
   .contact-left, .contact-right{
     flex-basis: 100%;
   }
+
+  .work-list .work .layer h3 {
+    display: none; 
+}
+
+.work-list .work .layer p {
+    display: none; 
+}
+
+.work-list .work .layer a {
+    font-size: 24px; 
+    line-height: 24px; 
+}
 }
