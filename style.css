@@ -364,11 +364,11 @@ form btn2{
   cursor: pointer;
 }
 
-
-/*--------------css for small screen--------------*/
 nav .fas{
   display: none
 }
+/*--------------css for small screen--------------*/
+
 @media only screen and (max-width: 600px){
   .header-text{
     margin-top: 100%;
